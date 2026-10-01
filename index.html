@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaCalc - Modern Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="brand">
+            <div class="brand-icon">∑</div>
+
+            <div>
+                <h1>NovaCalc</h1>
+                <span>Modern Calculator</span>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="status">
+                <span class="status-dot"></span>
+                Ready
+            </div>
+
+            <button id="themeButton" class="theme-button">☀</button>
+        </div>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- CALCULATOR -->
+        <section class="calculator-card">
+
+            <div class="calculator-header">
+                <div>
+                    <span class="small-title">SMART CALCULATOR</span>
+                    <h2>Calculate Anything</h2>
+                </div>
+
+                <div class="calculator-logo">N</div>
+            </div>
+
+
+            <!-- DISPLAY -->
+            <div class="display">
+
+                <div id="previousOperation" class="previous-operation">
+                    &nbsp;
+                </div>
+
+                <div id="currentOperation" class="current-operation">
+                    0
+                </div>
+
+            </div>
+
+
+            <!-- MEMORY -->
+            <div class="memory-bar">
+
+                <button id="memoryClear">MC</button>
+                <button id="memoryRecall">MR</button>
+                <button id="memoryAdd">M+</button>
+                <button id="memorySubtract">M−</button>
+
+                <span id="memoryIndicator">Memory: 0</span>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+            <div class="buttons">
+
+                <button class="function-button" data-action="clear">
+                    AC
+                </button>
+
+                <button class="function-button" data-action="delete">
+                    DEL
+                </button>
+
+                <button class="function-button" data-action="percent">
+                    %
+                </button>
+
+                <button class="operator-button" data-operation="/">
+                    ÷
+                </button>
+
+
+                <button data-number="7">7</button>
+                <button data-number="8">8</button>
+                <button data-number="9">9</button>
+
+                <button class="operator-button" data-operation="*">
+                    ×
+                </button>
+
+
+                <button data-number="4">4</button>
+                <button data-number="5">5</button>
+                <button data-number="6">6</button>
+
+                <button class="operator-button" data-operation="-">
+                    −
+                </button>
+
+
+                <button data-number="1">1</button>
+                <button data-number="2">2</button>
+                <button data-number="3">3</button>
+
+                <button class="operator-button" data-operation="+">
+                    +
+                </button>
+
+
+                <button class="zero-button" data-number="0">
+                    0
+                </button>
+
+                <button data-action="decimal">
+                    .
+                </button>
+
+                <button class="equals-button" data-action="calculate">
+                    =
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SIDE PANEL -->
+        <aside class="side-panel">
+
+            <!-- WELCOME -->
+            <div class="info-card welcome-card">
+
+                <div class="card-icon">✦</div>
+
+                <div>
+                    <span class="small-title">WELCOME</span>
+
+                    <h3>
+                        Powerful & Simple
+                    </h3>
+
+                    <p>
+                        Hitung angka dengan cepat menggunakan
+                        kalkulator modern NovaCalc.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- QUICK TOOLS -->
+            <div class="panel-card">
+
+                <div class="panel-title">
+                    <span>⚡</span>
+                    Quick Tools
+                </div>
+
+                <div class="tools-grid">
+
+                    <button data-tool="square">
+                        <strong>x²</strong>
+                        <span>Square</span>
+                    </button>
+
+                    <button data-tool="sqrt">
+                        <strong>√x</strong>
+                        <span>Square Root</span>
+                    </button>
+
+                    <button data-tool="inverse">
+                        <strong>1/x</strong>
+                        <span>Inverse</span>
+                    </button>
+
+                    <button data-tool="negative">
+                        <strong>±</strong>
+                        <span>Negative</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- HISTORY -->
+            <div class="panel-card history-card">
+
+                <div class="panel-title history-header">
+
+                    <div>
+                        <span>🕘</span>
+                        History
+                    </div>
+
+                    <button id="clearHistory">
+                        Clear
+                    </button>
+
+                </div>
+
+                <div id="historyList" class="history-list">
+
+                    <div class="empty-history">
+                        Belum ada riwayat
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFO -->
+            <div class="info-card tip-card">
+
+                <div class="tip-icon">⌨</div>
+
+                <div>
+                    <strong>Keyboard Support</strong>
+
+                    <p>
+                        Gunakan keyboard untuk menghitung
+                        lebih cepat.
+                    </p>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <span>NovaCalc</span>
+        <span>•</span>
+        <span>Modern Calculator</span>
+        <span>•</span>
+        <span>Made with ✦</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
